@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="./multimedia/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-header">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="./multimedia/logoNav.png" alt="Logo" ></a>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" id="active">Home</a>
+                <a href="quienesSomos.html">Quienes somos</a>
+                <a href="#">Contacto</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="semaforo">
+        <img class="mostrar" id="semaforo-rojo" src="./multimedia/rojo.png" alt="rojo">
+        <img class="mostrar" id="semaforo-amarillo" src="./multimedia/amarillo.png" alt="amarillo">
+        <img class="mostrar" id="semaforo-verde" src="./multimedia/verde.png" alt="verde">
+    </section>
+
+
+    <section class="cajaContacto">
+        <div class="formulario">
+            <form class="form1" action="enviarMail.php" method="post">
+                <input type="text" name="nombreUsuario" id="form-nombre" minlength="2" placeholder="Nombre completo" required>
+                <input type="email" name="mailUsuario" id="form-mail" placeholder="Ingrese su email" required>
+                <textarea name="mensajeUsuario" id="form-text" cols="30" rows="5" minlength="10" placeholder="Ingrese aquí su consulta"></textarea>
+                <input type="submit" value="Enviar" id="btn">
+            </form>
+        </div>
+    </section>
+
+    <div class="linea">
+    </div>
+
+    <footer class="footer">
+        <ul>
+            <li> <a href="#">Somos <span>FLASH</span></a></li>
+            <img src="./multimedia/logos redes sociales/1.png" alt="">
+            <img src="./multimedia/logos redes sociales/2.png" alt="">
+            <img src="./multimedia/logos redes sociales/3.png" alt="">
+        </ul>
+        <a class="slogan" href="#">PREVENIR SIN LAMENTAR</a>
+        <img src="./multimedia/logoFooter.png" alt="">
+    </footer>
+
+    
+
+
+    <script src="contacto.js"></script>
+</body>
+
+</html>
