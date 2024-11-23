@@ -1,6 +1,6 @@
 <?php
 	$conexion = new mysqli("localhost","root","","ppi");
-	$porComuna = "SELECT `Comuna`,count(*) as total from tablita group by `Comuna`";
+	$porComuna = "SELECT `Comuna`,count(*) as total from tablita WHERE `Comuna` !='' group by `Comuna`";
 
 	$resultado = $conexion->query($porComuna);
 
@@ -39,7 +39,7 @@
 	<canvas id="grafiquito">  </canvas>
 	<script> 
 		const dataJavaScript= <?php echo $json_data;?>; 
-		const lineas = dataJavaScript.map(item => `'Comuna' ${item[`Comuna`]}`);
+		const lineas = dataJavaScript.map(item => ` ${item[`Comuna`]}`);
 		const contar = dataJavaScript.map(item => item.total);
 		const grafico2d = document.getElementById('grafiquito');
 		new Chart(grafico2d, {

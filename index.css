@@ -11,6 +11,7 @@ body {
   padding: 0;
 }
 
+
 /* . para clases */
 
 /* # para id */
@@ -316,6 +317,10 @@ p {
 
 .form{
   width: 30%;
+}
+
+label{
+  color: whitesmoke !important;
 }
 
 /*semaforo de form*/

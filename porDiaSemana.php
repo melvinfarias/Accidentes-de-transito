@@ -1,7 +1,7 @@
 <?php
 	$conexion = new mysqli("localhost","root","","ppi");
 	
-	$porDiaSemana = "SELECT `Día semana`, COUNT(*) AS total FROM tablita GROUP BY `Día semana`";
+	$porDiaSemana = "SELECT `Día semana`, COUNT(*) AS total FROM tablita WHERE `Día semana` !='' GROUP BY `Día semana`";
 
 
 	$resultado = $conexion->query($porDiaSemana);
