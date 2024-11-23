@@ -49,8 +49,8 @@
 			datasets: [{
 				label: 'Conteo por Comuna',
 				data: contar,
-				backgroundColor: 'rgba(75, 192, 192, 1)',
-				borderColor: 'rgba(75, 192, 192, 1)',
+				backgroundColor: 'rgba(200, 0, 0, 1)',
+				borderColor: 'rgba(200, 0, 0, 1)',
 				borderWidth: 1
 			}]
 		},

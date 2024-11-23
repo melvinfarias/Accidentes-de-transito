@@ -81,8 +81,8 @@
 				label: 'Conteo por Año',
 				//array que tiene los valores de datos que se muestran en el grafico 
 				data: contar,
-				backgroundColor: 'rgba(75, 192, 192, 1)',
-				borderColor: 'rgba(75, 192, 192, 1)',
+				backgroundColor: 'rgba(200, 0, 0, 1)',
+				borderColor: 'rgba(200, 0, 0, 1)',
 				borderWidth: 1
 			}]
 		},
